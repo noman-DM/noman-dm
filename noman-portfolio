@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noman | Digital Marketer Portfolio</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #0f172a;
+            color: #e5e7eb;
+        }
+        header {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(135deg, #2563eb, #1e40af);
+        }
+        header h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        section {
+            padding: 50px 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+        h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+        .skills, .services {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #020617;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #1e293b;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #020617;
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        a {
+            color: #38bdf8;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Noman</h1>
+    <p>Digital Marketer | Social Media Growth Specialist</p>
+</header>
+
+<section>
+    <h2>About Me</h2>
+    <p>
+        I am a passionate Digital Marketer focused on helping brands grow online.
+        I specialize in social media marketing, content strategy, and audience growth.
+        My goal is to turn ideas into results.
+    </p>
+</section>
+
+<section>
+    <h2>Skills</h2>
+    <div class="skills">
+        <div class="card">Facebook Marketing</div>
+        <div class="card">Instagram Marketing</div>
+        <div class="card">LinkedIn Marketing</div>
+        <div class="card">YouTube SEO & Optimization</div>
+        <div class="card">Content Strategy</div>
+        <div class="card">Analytics & Growth</div>
+    </div>
+</section>
+
+<section>
+    <h2>Services</h2>
+    <div class="services">
+        <div class="card">Social Media Management</div>
+        <div class="card">Brand Growth Strategy</div>
+        <div class="card">Video & Content Optimization</div>
+        <div class="card">Freelancer & Agency Support</div>
+    </div>
+</section>
+
+<section>
+    <h2>Contact</h2>
+    <p>
+        📧 Email: yourname@email.com <br>
+        🌐 Facebook: <a href="#">facebook.com/noman</a> <br>
+        💼 LinkedIn: <a href="#">linkedin.com/in/noman</a>
+    </p>
+</section>
+
+<footer>
+    © 2026 Noman | All Rights Reserved
+</footer>
+
+</body>
+</html>
