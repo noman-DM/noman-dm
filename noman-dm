@@ -122,8 +122,8 @@ footer{
     <h2 id="typing"></h2>
 
     <div class="social">
-      <a href="https://wa.me/880XXXXXXXXXX">WhatsApp</a>
-      <a href="https://facebook.com/yourprofile">Facebook</a>
+      <a href="https://wa.me/+60142142133">WhatsApp</a>
+      <a href="https://facebook.com/nomang2r.dm">Facebook</a>
       <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
     </div>
   </div>
@@ -165,8 +165,8 @@ footer{
   <!-- Netlify Form -->
   <form class="box" name="contact" method="POST" data-netlify="true">
     <input type="hidden" name="form-name" value="contact">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
+    <input type="text" name="name" placeholder="noman" required>
+    <input type="email" name="email" placeholder="nomandm01@gmail.com" required>
     <textarea name="message" rows="5" placeholder="Your Message"></textarea>
     <button type="submit">Send Message</button>
   </form>
