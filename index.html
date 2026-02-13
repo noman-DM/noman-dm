@@ -3,13 +3,93 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noman | Digital Marketer</title>
 
-<title>Noman | Digital Marketer & Freelancer</title>
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
 
-<meta name="description" content="Noman is a Digital Marketer, Freelancer, Content Creator and Web Designer helping brands grow online.">
-<meta name="keywords" content="Digital Marketer, Freelancer, SEO, Facebook Marketing, Web Designer">
-<meta name="author" content="Noman">
+body{
+  background:#020617;
+  color:#e5e7eb;
+}
 
+header{
+  min-height:100vh;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.profile-img{
+  width:180px;
+  height:180px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:20px 0;
+  border:4px solid #38bdf8;
+}
+
+
+.hero h1{
+  font-size:52px;
+  color:#38bdf8;
+}
+
+.hero h2{
+  margin-top:15px;
+  font-size:22px;
+  height:30px;
+}
+
+.social a{
+  margin:15px 10px;
+  display:inline-block;
+  color:#38bdf8;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+section{
+  padding:80px 10%;
+}
+
+.box{
+  background:#0f172a;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.box:hover{
+  transform:translateY(-8px);
+  background:#020617;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:30px;
+  font-size:32px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#94a3b8;
+}
 <style>
 *{
   margin:0;
@@ -24,17 +104,7 @@ body{
   scroll-behavior:smooth;
 }
 
-<header>
-  <div class="hero">
-
-    <img src="images/profile.jpg"
-         alt="Noman - Digital Marketer"
-         class="profile-img">
-
-    <h1>Noman</h1>
-    <h2 id="typing"></h2>
-
-  {
+header{
   min-height:100vh;
   display:flex;
   justify-content:center;
@@ -42,108 +112,31 @@ body{
   text-align:center;
 }
 
-  {
+.profile-img{
   width:180px;
   height:180px;
   border-radius:50%;
   object-fit:cover;
   margin:20px 0;
   border:4px solid #38bdf8;
-  }
-
-  .hero h1{
-  font-size:56px;
-  color:#38bdf8;
-  }
-
-.hero h2{
-  margin-top:15px;
-  font-size:24px;
-  height:32px;
 }
+  </style>
+  <header>
 
-.social a{
-  margin:15px;
-  color:#38bdf8;
-  text-decoration:none;
-  font-weight:bold;
-}
+  </div>
+</header>
 
-section{
-  padding:90px 10%;
-  opacity:0;
-  transform:translateY(40px);
-  transition:1s;
-}
-
-section.show{
-  opacity:1;
-  transform:translateY(0);
-}
-
-.box{
-  background:#0f172a;
-  padding:30px;
-  border-radius:14px;
-  transition:.3s;
-}
-
-.box:hover{
-  transform:translateY(-10px);
-  background:#020617;
-}
-
-.grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-  gap:25px;
-}
-
-h2{
-  color:#38bdf8;
-  margin-bottom:30px;
-  font-size:34px;
-}
-
-input,textarea{
-  width:100%;
-  padding:14px;
-  margin-bottom:15px;
-  border:none;
-  border-radius:8px;
-  outline:none;
-}
-
-button{
-  padding:14px 30px;
-  border:none;
-  background:#38bdf8;
-  color:#020617;
-  font-weight:bold;
-  border-radius:8px;
-  cursor:pointer;
-}
-
-footer{
-  text-align:center;
-  padding:20px;
-  background:#020617;
-  color:#94a3b8;
-}
-</style>
-</head>
-
-<body>
-
-<header>
   <div class="hero">
+    <img src="images/profile.jpg"
+         alt="Noman - Digital Marketer"
+         class="profile-img">
     <h1>Noman</h1>
     <h2 id="typing"></h2>
 
     <div class="social">
-      <a href="https://wa.me/+60142142133">WhatsApp</a>
-      <a href="https://facebook.com/nomang2r.dm">Facebook</a>
-      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+      <a href="https://wa.me/+60142142133" target="_blank">WhatsApp</a>
+      <a href="https://facebook.com/noman g2r.dm" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
     </div>
   </div>
 </header>
@@ -151,8 +144,8 @@ footer{
 <section>
   <h2>About Me</h2>
   <div class="box">
-    I’m a Digital Marketer & Freelancer helping businesses grow through data-driven
-    marketing, SEO optimization and modern web design.
+    I’m a Digital Marketer, Freelancer & Content Creator helping brands grow online
+    through smart strategy, creative content, and strong web presence.
   </div>
 </section>
 
@@ -169,53 +162,57 @@ footer{
 </section>
 
 <section>
-  <h2>Projects</h2>
+  <h2>Portfolio / Projects</h2>
   <div class="grid">
-    <div class="box">Brand Growth Campaign</div>
-    <div class="box">SEO Ranking Project</div>
-    <div class="box">Business Website</div>
-    <div class="box">Creative Branding</div>
+    <div class="box">Social Media Growth Campaign</div>
+    <div class="box">YouTube Channel Optimization</div>
+    <div class="box">Business Website Design</div>
+    <div class="box">Branding & Visual Design</div>
   </div>
 </section>
 
 <section>
-  <h2>Contact Me</h2>
-
-  <!-- Netlify Form -->
-  <form class="box" name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <input type="text" name="name" placeholder="noman" required>
-    <input type="email" name="email" placeholder="nomandm01@gmail.com" required>
-    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
-    <button type="submit">Send Message</button>
-  </form>
+  <h2>Contact</h2>
+  <div class="box">
+    Let’s work together 🚀 <br><br>
+    📧 yourmail@gmail.com
+  </div>
 </section>
 
 <footer>
-© 2026 Noman | Digital Marketing Portfolio
+© 2026 Noman | Digital Marketer
 </footer>
 
 <script>
-// Typing Effect
-const text=["Digital Marketer","Freelancer","Content Creator","Web Designer"];
-let count=0,index=0;
-(function type(){
- if(count===text.length)count=0;
- let current=text[count];
- document.getElementById("typing").innerText=current.slice(0,++index);
- if(index===current.length){count++;index=0;setTimeout(type,1500);}
- else setTimeout(type,120);
-})();
+const text = [
+  "Digital Marketer",
+  "Freelancer",
+  "Content Creator",
+  "Web Designer"
+];
 
-// Scroll Animation
-const sections=document.querySelectorAll("section");
-window.addEventListener("scroll",()=>{
- sections.forEach(sec=>{
-  if(sec.getBoundingClientRect().top<window.innerHeight-100){
-    sec.classList.add("show");
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+  if(count === text.length){
+    count = 0;
   }
- });
-});
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+
+  if(letter.length === currentText.length){
+    count++;
+    index = 0;
+    setTimeout(type, 1500);
+  } else {
+    setTimeout(type, 120);
+  }
+})();
 </script>
 
 </body>
