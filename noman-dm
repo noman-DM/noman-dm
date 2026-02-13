@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Noman | Digital Marketer</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background:#020617;
+  color:#e5e7eb;
+}
+
+header{
+  min-height:100vh;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:52px;
+  color:#38bdf8;
+}
+
+.hero h2{
+  margin-top:15px;
+  font-size:22px;
+  height:30px;
+}
+
+.social a{
+  margin:15px 10px;
+  display:inline-block;
+  color:#38bdf8;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+section{
+  padding:80px 10%;
+}
+
+.box{
+  background:#0f172a;
+  padding:25px;
+  border-radius:12px;
+  text-align:center;
+  transition:0.3s;
+}
+
+.box:hover{
+  transform:translateY(-8px);
+  background:#020617;
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+  gap:20px;
+}
+
+h2{
+  color:#38bdf8;
+  margin-bottom:30px;
+  font-size:32px;
+}
+
+footer{
+  text-align:center;
+  padding:20px;
+  background:#020617;
+  color:#94a3b8;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="hero">
+    <h1>Noman</h1>
+    <h2 id="typing"></h2>
+
+    <div class="social">
+      <a href="https://wa.me/880XXXXXXXXXX" target="_blank">WhatsApp</a>
+      <a href="https://facebook.com/yourprofile" target="_blank">Facebook</a>
+      <a href="https://linkedin.com/in/yourprofile" target="_blank">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<section>
+  <h2>About Me</h2>
+  <div class="box">
+    I’m a Digital Marketer, Freelancer & Content Creator helping brands grow online
+    through smart strategy, creative content, and strong web presence.
+  </div>
+</section>
+
+<section>
+  <h2>My Skills</h2>
+  <div class="grid">
+    <div class="box">Facebook Marketing</div>
+    <div class="box">LinkedIn Marketing</div>
+    <div class="box">YouTube Optimization</div>
+    <div class="box">SEO</div>
+    <div class="box">Graphic Design</div>
+    <div class="box">Web Design</div>
+  </div>
+</section>
+
+<section>
+  <h2>Portfolio / Projects</h2>
+  <div class="grid">
+    <div class="box">Social Media Growth Campaign</div>
+    <div class="box">YouTube Channel Optimization</div>
+    <div class="box">Business Website Design</div>
+    <div class="box">Branding & Visual Design</div>
+  </div>
+</section>
+
+<section>
+  <h2>Contact</h2>
+  <div class="box">
+    Let’s work together 🚀 <br><br>
+    📧 yourmail@gmail.com
+  </div>
+</section>
+
+<footer>
+© 2026 Noman | Digital Marketer
+</footer>
+
+<script>
+const text = [
+  "Digital Marketer",
+  "Freelancer",
+  "Content Creator",
+  "Web Designer"
+];
+
+let count = 0;
+let index = 0;
+let currentText = "";
+let letter = "";
+
+(function type(){
+  if(count === text.length){
+    count = 0;
+  }
+  currentText = text[count];
+  letter = currentText.slice(0, ++index);
+
+  document.getElementById("typing").textContent = letter;
+
+  if(letter.length === currentText.length){
+    count++;
+    index = 0;
+    setTimeout(type, 1500);
+  } else {
+    setTimeout(type, 120);
+  }
+})();
+</script>
+
+</body>
+</html>
