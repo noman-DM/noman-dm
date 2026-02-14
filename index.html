@@ -1,4 +1,4 @@
-guy<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -38,8 +38,8 @@ header{
   height:180px;
   border-radius:50%;
   object-fit:cover;
-  margin:20px 0;
   border:4px solid #38bdf8;
+  margin-bottom:20px;
 }
 
 .hero h1{
@@ -53,6 +53,7 @@ header{
   height:32px;
 }
 
+/* SOCIAL */
 .social a{
   margin:15px;
   color:#38bdf8;
@@ -73,22 +74,10 @@ section.show{
   transform:translateY(0);
 }
 
-h2{
-  color:#38bdf8;
-  margin-bottom:30px;
-  font-size:34px;
-}
-
 .box{
   background:#0f172a;
   padding:30px;
   border-radius:14px;
-  transition:.3s;
-}
-
-.box:hover{
-  transform:translateY(-10px);
-  background:#020617;
 }
 
 .grid{
@@ -97,14 +86,19 @@ h2{
   gap:25px;
 }
 
-/* CONTACT */
+section h2{
+  color:#38bdf8;
+  margin-bottom:30px;
+  font-size:34px;
+}
+
+/* FORM */
 input,textarea{
   width:100%;
   padding:14px;
   margin-bottom:15px;
   border:none;
   border-radius:8px;
-  outline:none;
 }
 
 button{
@@ -121,7 +115,6 @@ button{
 footer{
   text-align:center;
   padding:20px;
-  background:#020617;
   color:#94a3b8;
 }
 </style>
@@ -131,23 +124,18 @@ footer{
 
 <header>
   <div class="hero">
-    
 
-    <!-- PROFILE IMAGE -->
-    <img src="images/profile.jpg" alt="Noman" class="profile-img">
-    <img src="images/profile.jpg"
-         alt="Noman - Digital Marketer"
-         class="profile-img">
+    <!-- ✅ PROFILE IMAGE -->
+    <img src="images/profile.jpg" alt="Noman - Digital Marketer" class="profile-img">
 
     <h1>Noman</h1>
     <h2 id="typing"></h2>
 
     <div class="social">
-      <a href="https://wa.me/+60142142133">WhatsApp</a>
+      <a href="https://wa.me/60142142133">WhatsApp</a>
       <a href="https://facebook.com/nomang2r.dm">Facebook</a>
-      <a href="https://linkedin.com/in/yourprofile">LinkedIn</a>
+      <a href="https://linkedin.com">LinkedIn</a>
     </div>
-
   </div>
 </header>
 
@@ -155,7 +143,7 @@ footer{
   <h2>About Me</h2>
   <div class="box">
     I’m a Digital Marketer & Freelancer helping businesses grow through
-    Facebook Marketing, SEO, Content Creation and modern Web Design.
+    SEO, paid ads and modern web design.
   </div>
 </section>
 
@@ -183,13 +171,10 @@ footer{
 
 <section>
   <h2>Contact Me</h2>
-
-  <!-- Netlify Form -->
-  <form class="box" name="contact" method="POST" data-netlify="true">
-    <input type="hidden" name="form-name" value="contact">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message"></textarea>
+  <form class="box">
+    <input type="text" placeholder="Your Name">
+    <input type="email" placeholder="Your Email">
+    <textarea rows="5" placeholder="Your Message"></textarea>
     <button type="submit">Send Message</button>
   </form>
 </section>
@@ -199,7 +184,7 @@ footer{
 </footer>
 
 <script>
-// Typing Effect
+/* Typing Effect */
 const text=["Digital Marketer","Freelancer","Content Creator","Web Designer"];
 let count=0,index=0;
 
@@ -207,6 +192,7 @@ let count=0,index=0;
   if(count===text.length) count=0;
   let current=text[count];
   document.getElementById("typing").innerText=current.slice(0,++index);
+
   if(index===current.length){
     count++; index=0;
     setTimeout(type,1500);
@@ -215,7 +201,7 @@ let count=0,index=0;
   }
 })();
 
-// Scroll Animation
+/* Scroll Animation */
 const sections=document.querySelectorAll("section");
 window.addEventListener("scroll",()=>{
   sections.forEach(sec=>{
