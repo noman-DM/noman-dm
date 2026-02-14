@@ -11,6 +11,26 @@
 <meta name="author" content="Noman">
 
 <style>
+    /* Hover Animation */
+.box{
+  transition: all .4s ease;
+}
+
+.box:hover{
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 20px 40px rgba(56,189,248,.15);
+}
+
+/* Profile Image Glow */
+.profile-img{
+  box-shadow: 0 0 25px rgba(56,189,248,.6);
+  transition:.4s;
+}
+
+.profile-img:hover{
+  transform:scale(1.05);
+  box-shadow: 0 0 50px rgba(56,189,248,.9);
+}
 *{
   margin:0;
   padding:0;
@@ -118,7 +138,7 @@ footer{
   color:#94a3b8;
 }
 </style>
-</head>
+ </head>
 
 <body>
 
