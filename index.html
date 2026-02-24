@@ -12,33 +12,33 @@
 <meta name="author" content="Noman-DM">
 
 <style>
- [.(/style)
- .image-gallery {
-  margin: 40px auto;
-  max-width: 900px;
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
-  gap: 15px;
-  padding: 20px;
+ .(/style)
+  .image-gallery {
+   margin: 40px auto;
+   max-width: 800px;
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+   gap: 15px;
+   padding: 15px;
 }
 
-.image-gallery img {
+ .image-gallery img {
   width: 100%;
   border-radius: 12px;
   transition: 0.4s ease;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
-.image-gallery img:hover {
+ .image-gallery img:hover {
   transform: scale(1.08);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
-}]
- 
-    /* Hover Animation */
-.box{
+}
+    
+ /* Hover Animation */
+ .box{
   transition: all .4s ease;
 }
-.box:hover{
+ .box:hover{
   transform: translateY(-12px) scale(1.03);
   box-shadow: 0 20px 40px rgba(56,189,248,.15);
 }
@@ -157,6 +157,51 @@ footer{
   padding:20px;
   color:#94a3b8;
 }
+     .social-box {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 16px 20px;
+  border: 2px solid #00eaff;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.03);
+  width: fit-content;
+  margin: 20px auto;
+}
+
+/* Common button style */
+.social-link {
+  text-decoration: none;
+  font-weight: 600;
+  padding: 10px 16px;
+  border-radius: 10px;
+  color: #fff;
+  transition: 0.3s ease;
+}
+
+/* WhatsApp – Green */
+.social-link.whatsapp {
+  background: #25D366;
+}
+.social-link.whatsapp:hover {
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.8);
+}
+
+/* Facebook – Sky Blue */
+.social-link.facebook {
+  background: #87CEEB;
+}
+.social-link.facebook:hover {
+  box-shadow: 0 0 15px rgba(56, 189, 248, 0.8);
+}
+
+/* LinkedIn – Deep Blue */
+.social-link.linkedin {
+  background: #0a66c2;
+}
+.social-link.linkedin:hover {
+  box-shadow: 0 0 15px rgba(10, 102, 194, 0.8);
+}
 </style>
  </head>
 <body>
@@ -169,12 +214,16 @@ footer{
     <h1>Noman</h1>
    
     <h2 id="typing"></h2>
-   
     <div class="social">
       <a href="https://wa.me/60142142133">WhatsApp</a>
       <a href="https://facebook.com/nomang2r.dm">Facebook</a>
       <a href="https://www.linkedin.com/in/noman-g2r/">LinkedIn</a>
     </div>
+   <div class="social-box">
+  <a href="#" class="social-link whatsapp">WhatsApp</a>
+  <a href="#" class="social-link facebook">Facebook</a>
+  <a href="#" class="social-link linkedin">LinkedIn</a>
+   </div>
   </div>
 </header>
  <div class="image-gallery">
