@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+ <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
@@ -103,7 +104,15 @@ header{
   text-decoration:none;
   font-weight:bold;
 }
-
+.social-link {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;     
+ /* চাইলে বড়/ছোট করো */
+  letter-spacing: 0.5px;
+}
+ .social-link.whatsapp { color: #eafff3; }
+.social-link.facebook { color: #f0fbff; }
+.social-link.linkedin { color: #eef4ff; }
 /* SECTIONS */
 section{
   padding:90px 10%;
@@ -189,6 +198,10 @@ footer{
 .social-link.whatsapp:hover {
   box-shadow: 0 0 15px rgba(37, 211, 102, 0.8);
 }
+ .social-link.whatsapp {
+  background: #25D366;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.9);
+ }
 
 /* Facebook – Sky Blue */
 .social-link.facebook {
@@ -197,13 +210,24 @@ footer{
 .social-link.facebook:hover {
   box-shadow: 0 0 15px rgba(135, 206, 235, 0.8);
 }
-
+.social-link.facebook {
+  background: #87CEEB;
+  box-shadow: 0 0 20px rgba(135, 206, 235, 0.9);
+}
 /* LinkedIn – Deep Blue */
 .social-link.linkedin {
   background: #0a66c2;
 }
 .social-link.linkedin:hover {
   box-shadow: 0 0 15px rgba(10, 102, 194, 0.8);
+}
+ .social-link.linkedin {
+  background: #0a66c2;
+  box-shadow: 0 0 20px rgba(10, 102, 194, 0.9);
+}
+ .social-link:hover {
+  transform: translateY(-3px) scale(1.05);
+  filter: brightness(1.15);
 }
 </style>
  </head>
