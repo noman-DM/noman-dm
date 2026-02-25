@@ -11,11 +11,62 @@
 <meta name="description" content="Noman-DM is a Digital Marketer, Freelancer, Content Creator and Web Designer helping brands grow online.">
 <meta name="keywords" content="Digital Marketer, Freelancer, Search Engine Optimization (SEO), Facebook Marketing, Web Designer, LoGo Designs">
 <meta name="author" content="Noman-DM">
-<div class="project-box">
     
 <style>
+ html{
+  scroll-behavior: smooth;
+ }
+ @media (max-width: 768px){
+  .hero h1{
+    font-size: 36px;
+  }
+
+  .hero h2{
+    font-size: 18px;
+  }
+
+  .profile-img{
+    width:140px;
+    height:140px;
+  }
+ }
+ @media (max-width:600px){
+  .social-box{
+    flex-direction: column;
+    gap: 12px;
+    width: 90%;
+  }
+
+  .social-link{
+    width:100%;
+    text-align:center;
+  }
+}
+ @media (max-width:768px){
+  section{
+    padding:60px 5%;
+  }
+}
+ @media (min-width:1200px){
+  .hero h1{
+    font-size:64px;
+  }
+
+  .box{
+    padding:50px;
+  }
+ }
+ .image-gallery{
+  max-width:1000px;
+}
+
+@media (max-width:600px){
+  .image-gallery{
+    grid-template-columns: repeat(2,1fr);
+  }
+}
   .style
-  .image-gallery {
+  .image-gallery{
    margin: 40px auto;
    max-width: 800px;
    display: grid;
@@ -24,14 +75,14 @@
    padding: 15px;
 }
 
- .image-gallery img {
+ .image-gallery img{
   width: 100%;
   border-radius: 12px;
   transition: 0.4s ease;
   box-shadow: 0 0 15px rgba(0, 255, 255, 0.2);
 }
 
- .image-gallery img:hover {
+ .image-gallery img:hover{
   transform: scale(1.08);
   box-shadow: 0 0 25px rgba(0, 255, 255, 0.6);
 }
@@ -40,9 +91,11 @@
  .box{
   transition: all .4s ease;
 }
- box:hover
-transform: translateY(-12px) scale(1.03);
-box-shadow: 0 25px 50px rgba(56,189,248,0.15)
+ 
+.box:hover{
+  transform: translateY(-12px) scale(1.03);
+  box-shadow: 0 25px 50px rgba(56,189,248,0.15);
+}
  
 /* Profile Image Glow */
 .profile-img{
@@ -60,7 +113,7 @@ box-shadow: 0 25px 50px rgba(56,189,248,0.15)
   font-family:'Segoe UI',sans-serif;
 }
  
-body {
+body{
   background: #0b1c2d; /* Midnight Blue */
   color: #ffffff; /* White text */
   font-family: 'Poppins', 'Segoe UI', sans-serif;
@@ -104,7 +157,7 @@ header{
   text-decoration:none;
   font-weight:bold;
 }
-.social-link {
+.social-link{
   font-family: 'TT Octosquares Compressed', bold ;
   font-size: 35px;     
  /* চাইলে বড়/ছোট করো */
@@ -174,7 +227,7 @@ footer{
   color:#94a3b8;
 }
  
-.social-box {
+.social-box{
   display: flex;
   justify-content: center;
   gap: 20px;
@@ -187,12 +240,12 @@ footer{
   margin-left: auto;
   margin-right: auto;
 }
- ".social-box {
+ .social-box{
   box-shadow: 0 0 30px rgba(0, 234, 255, 0.35);
-}"
+}
 
 /* Common style */
-.social-link {
+.social-link{
   text-decoration: none;
   font-weight: 600;
   padding: 10px 16px;
@@ -202,35 +255,35 @@ footer{
 }
 
 /* WhatsApp – Green */
-.social-link.whatsapp {
+.social-link.whatsapp{
   background: #25D366;
 }
- .social-link.whatsapp {
+ .social-link.whatsapp{
   background: #25D366;
   box-shadow: 0 0 15px rgba(30, 211, 102, 0.40);
  }
 
 /* Facebook – Sky Blue */
-.social-link.facebook {
+.social-link.facebook 
   background: #87CEEB;
 }
-.social-link.facebook {
+.social-link.facebook{
   background: #87CEEB;
   box-shadow: 0 0 15px rgba(130, 206, 235, 0.40);
 }
 /* LinkedIn – Deep Blue */
-.social-link.linkedin {
+.social-link.linkedin{
   background: #0a66c2;
 }
- .social-link.linkedin {
+ .social-link.linkedin{
   background: #0a66c2;
   box-shadow: 0 0 15px rgba(5, 102, 194, 0.35);
  }
- .social-link:hover {
+ .social-link:hover{
   transform: translateY(-2px) scale(1.03);
   filter: brightness(1.05);
 }
-  .project-box {
+  .project-box{
     display: block;
     text-decoration: none;
     color: white;
@@ -365,10 +418,7 @@ footer{
  
   <h2>About Me</h2>
   <div class="box">
-  I am an experienced digital marketer and freelancer. I'm helps businesses grow online quickly through modern and effective digital solutions. 
-   I use social media optimization, (SEO) , paid ads, logo design and modern web design to strengthen your brand's online presence, help you reach the right audience,
-  and increase conversions. 
-   My goal is not just to bring in visitors, but to convert visitors into customers and ensure the long-term growth of your business💹.
+  I am an experienced digital marketer and freelancer. I help businesses grow online quickly through modern and effective digital solutions. I use social media optimization, SEO, paid ads, logo design, and modern web design to strengthen your brand's online presence, reach the right audience, and increase conversions. My goal is not just to bring visitors, but to convert them into customers and ensure the long-term growth of your business 💹.
   </div>
 
 <section>
