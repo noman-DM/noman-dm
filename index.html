@@ -135,7 +135,7 @@ section.show{
 }
  .box:hover{
   transform: translateY(-10px) scale(1.03);
-  box-shadow: 0 25px 50px rgba(56,189,248,0.35);
+  box-shadow: 0 20px 50px rgba(56,189,248,0.35);
   background: #1b334d;
  }
 
@@ -235,13 +235,25 @@ footer{
     text-decoration: none;
     color: white;
   }
- /* Projects Box Font Style */
+ /* ===== Premium Projects Style ===== */
+
 .projects-section .box{
-  font-family: 'TT Octosquares Compressed', bold; /* Font change */
-  font-size: 25px; /* Size change */
-  font-weight: 600; /* একটু bold */
-  letter-spacing: 0.5px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  color: #38bdf8; /* Highlight Blue */
+  letter-spacing: 0.6px;
+  text-align: center;
   text-transform: capitalize;
+  transition: 0.3s ease;
+}
+
+/* Hover Effect */
+.projects-section .box:hover{
+  color: #ffffff;
+  background: linear-gradient(135deg, #38bdf8, #0ea5e9);
+  box-shadow: 0 20px 40px rgba(56,189,248,0.35);
+  transform: translateY(-10px) scale(1.05);
 }
  
 </style>
@@ -301,7 +313,7 @@ footer{
       Social media Optimization
   </a>
      <a href="seo.html" class="box project-box">
-      Brand Growth Campaign
+      🚀Brand Growth Campaign
   </a>
      <a href="seo.html" class="box project-box">
       Search Engine Optimization (SEO)
