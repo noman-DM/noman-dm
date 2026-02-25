@@ -256,6 +256,35 @@ footer{
   transform: translateY(-10px) scale(1.05);
 }
  
+ /* ===== Skills Premium Design ===== */
+.skills-section .skill-card{
+  background: linear-gradient(145deg, #13263a, #0f1e30);
+  border: 1px solid rgba(56,189,248,0.3);
+  box-shadow: 0 0 25px rgba(56,189,248,0.15);
+  text-align: center;
+  transition: 0.4s ease;
+}
+
+.skills-section .skill-card h3{
+  font-size: 22px;
+  color: #38bdf8;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+
+.skills-section .skill-card p{
+  font-size: 15px;
+  color: #cbd5e1;
+  line-height: 1.6;
+}
+
+/* Hover Effect */
+.skills-section .skill-card:hover{
+  transform: translateY(-12px) scale(1.05);
+  box-shadow: 0 25px 50px rgba(56,189,248,0.35);
+  background: linear-gradient(145deg, #1b334d, #13263a);
+}
+ 
 </style>
  </head>
 <body>
@@ -291,18 +320,42 @@ footer{
   and increase conversions. 
    My goal is not just to bring in visitors, but to convert visitors into customers and ensure the long-term growth of your business💹.
   </div>
-</section>
 
 <section>
+  <section class="skills-section">
   <h2>My Skills</h2>
   <div class="grid">
-    <div class="box">search engine optimization(SEO)</div>
-    <div class="box">YouTube Optimization</div>
-    <div class="box">Facebook Marketing</div>
-    <div class="box">LinkedIn Marketing</div>
-    <div class="box">YouTube marketing</div>
-    <div class="box">LoGo Design</div>
-    <div class="box">graphic Design</div>
+
+    <div class="box skill-card">
+      <h3>SEO</h3>
+      <p>Rank your website on Google with powerful optimization strategies.</p>
+    </div>
+
+    <div class="box skill-card">
+      <h3>YouTube Optimization</h3>
+      <p>Boost views & subscribers with smart content optimization.</p>
+    </div>
+
+    <div class="box skill-card">
+      <h3>Facebook Marketing</h3>
+      <p>Targeted ads & growth campaigns to increase conversions.</p>
+    </div>
+
+    <div class="box skill-card">
+      <h3>LinkedIn Marketing</h3>
+      <p>Professional branding & B2B lead generation strategies.</p>
+    </div>
+
+    <div class="box skill-card">
+      <h3>Logo Design</h3>
+      <p>Modern and creative logo design for strong brand identity.</p>
+    </div>
+
+    <div class="box skill-card">
+      <h3>Graphic Design</h3>
+      <p>Creative visuals that attract and engage your audience.</p>
+    </div>
+
   </div>
 </section>
 
