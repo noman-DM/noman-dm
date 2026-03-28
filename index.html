@@ -13,6 +13,18 @@
 <meta name="author" content="Noman-DM">
     
 <style>
+ .search-container {
+    max-width: 600px;
+    margin: 20px auto;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* সার্চ বক্সের ইনপুট ফিল্ড কাস্টমাইজ করা */
+.gsc-control-cse {
+    background-color: transparent !important;
+    border: none !important;
+}
  html{
   scroll-behavior: smooth;
  }
@@ -393,7 +405,10 @@ footer{
 <body>
 <header>
   <div class="hero">
-
+<div class="search-container" style="padding: 20px; text-align: center;">
+    <script async src="https://cse.google.com/cse.js?cx=YOUR_ENGINE_ID"></script>
+    <div class="gcse-search"></div>
+</div>
     <!-- ✅ PROFILE IMAGE -->
     <img src="images/profile.jpg" alt="Noman - Digital Marketer" class="profile-img">
 
